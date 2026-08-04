@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X7 - منظمة سيبرانية</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat-online.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -20,6 +21,7 @@
                 <li><a href="#chat">المنتدى</a></li>
                 <li><a href="#contact">تواصل معنا</a></li>
             </ul>
+            <div id="user-display" class="user-display"></div>
         </div>
     </nav>
 
@@ -65,15 +67,16 @@
         </div>
     </section>
 
-    <!-- Chat Section -->
+    <!-- Chat Section - Online -->
     <section id="chat" class="chat-section">
         <div class="chat-container">
-            <h2>منتدى X7</h2>
+            <h2>منتدى X7 🌐 (أونلاين)</h2>
+            <p class="chat-subtitle">شارك معرفتك وتعلم من الآخرين - جميع الرسائل محفوظة أونلاين</p>
             <div class="chat-wrapper">
                 <!-- Chat Messages -->
                 <div class="chat-messages" id="chat-messages">
                     <div class="system-message">
-                        <p>🔓 مرحباً بك في منتدى X7 - شارك معرفتك وتعلم من الآخرين</p>
+                        <p>🔓 جاري تحميل الرسائل...</p>
                     </div>
                 </div>
 
@@ -91,7 +94,7 @@
                             <span>إرسال</span>
                         </button>
                     </div>
-                    <small class="info-text">⚠️ هذا المنتدى يعمل محلياً - الرسائل تُحفظ في متصفحك</small>
+                    <small class="info-text">✅ هذا المنتدى متصل بالإنترنت - الرسائل تُحفظ في قاعدة البيانات</small>
                 </div>
             </div>
 
@@ -121,9 +124,14 @@
         <p class="footer-security">🔒 الأمان السيبراني أولاً</p>
     </footer>
 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js"></script>
+
+    <script src="js/firebase-config.js"></script>
     <script src="js/matrix.js"></script>
-    <script src="js/storage.js"></script>
-    <script src="js/chat.js"></script>
+    <script src="js/chat-online.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
