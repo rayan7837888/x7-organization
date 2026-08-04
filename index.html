@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X7 - منظمة سيبرانية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚔️</span>
+                <span class="logo-text">X7</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#about">عن المنظمة</a></li>
+                <li><a href="#chat">المنتدى</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">X7</h1>
+            <p class="hero-subtitle">منظمة سيبرانية متخصصة في الأمان الرقمي</p>
+            <p class="hero-description">نحن نعمل على حماية البنية التحتية الرقمية والدفاع عن الأمن السيبراني</p>
+            <button class="cta-button" onclick="scrollToChat()">انضم للمنتدى</button>
+        </div>
+        <div class="matrix-bg">
+            <canvas id="matrix-canvas"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2>عن X7</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🔐</div>
+                    <h3>الأمان</h3>
+                    <p>حماية الأنظمة والبيانات من التهديدات السيبرانية</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>الاختبار</h3>
+                    <p>اختبارات الاختراق والضعفاء الأمنية</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">📚</div>
+                    <h3>التعليم</h3>
+                    <p>نشر الوعي الأمني والمعرفة السيبرانية</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>التعاون</h3>
+                    <p>مجتمع متحد من خبراء الأمن السيبراني</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat" class="chat-section">
+        <div class="chat-container">
+            <h2>منتدى X7</h2>
+            <div class="chat-wrapper">
+                <!-- Chat Messages -->
+                <div class="chat-messages" id="chat-messages">
+                    <div class="system-message">
+                        <p>🔓 مرحباً بك في منتدى X7 - شارك معرفتك وتعلم من الآخرين</p>
+                    </div>
+                </div>
+
+                <!-- Chat Input -->
+                <div class="chat-input-area">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="message-input" 
+                            class="message-input" 
+                            placeholder="اكتب رسالتك هنا..."
+                            autocomplete="off"
+                        >
+                        <button class="send-button" onclick="sendMessage()">
+                            <span>إرسال</span>
+                        </button>
+                    </div>
+                    <small class="info-text">⚠️ هذا المنتدى يعمل محلياً - الرسائل تُحفظ في متصفحك</small>
+                </div>
+            </div>
+
+            <!-- Clear Chat Button -->
+            <div class="chat-controls">
+                <button class="clear-button" onclick="clearChat()">مسح الرسائل</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>تواصل معنا</h2>
+            <p>للاستفسارات والتعاون</p>
+            <div class="contact-info">
+                <a href="mailto:info@x7.local" class="contact-link">📧 البريد الإلكتروني</a>
+                <a href="#" class="contact-link">🌐 الموقع الرسمي</a>
+                <a href="#" class="contact-link">💬 وسائل التواصل</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 X7 - منظمة سيبرانية. جميع الحقوق محفوظة.</p>
+        <p class="footer-security">🔒 الأمان السيبراني أولاً</p>
+    </footer>
+
+    <script src="js/matrix.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
